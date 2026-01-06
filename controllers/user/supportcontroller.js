@@ -55,8 +55,7 @@ export const sendUserMessage = async (req, res) => {
         // ✅ ONLY STRING (schema ke mutabiq)
         images.push(result.secure_url);
 
-        // 🔎 CONFIRMATION
-        console.log("CLOUD IMAGE:", result.secure_url);
+      
       }
     }
 

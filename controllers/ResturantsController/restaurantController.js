@@ -1,6 +1,6 @@
 import Restaurant from "../../models/addResturantModel.js";
+import addProducts from "../../models/restaurants/addProducts.js";
 import User from "../../models/userModel.js";
-import addProducts from "../../models/resturants/addProducts.js";
 
 // CREATE RESTAURANT
 export const createRestaurant = async (req, res) => {

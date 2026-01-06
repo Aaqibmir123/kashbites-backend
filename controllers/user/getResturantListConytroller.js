@@ -1,5 +1,5 @@
 import Restaurant from "../../models/addResturantModel.js";
-import ResturantProduct from "../../models/resturants/addProducts.js";
+import ResturantProduct from "../../models/restaurants/addProducts.js";
 
 /* ================= GET ALL RESTAURANTS ================= */
 export const getResturantListController = async (req, res) => {

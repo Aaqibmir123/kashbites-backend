@@ -2,9 +2,9 @@ import express from "express";
 import {
   getAdminConversations,
   getAdminMessages,
-  sendAdminMessage,
   markConversationRead,
-} from "../../controllers/admin/supportcontroller.js";
+  sendAdminMessage,
+} from "../../controllers/admin/supportController.js";
 
 import upload from "../../middleware/uploadSupport.js";
 

@@ -3,7 +3,7 @@ import {
   getUserConversation,
   getUserMessages,
   sendUserMessage,
-} from "../../controllers/user/supportController.js";
+} from "../../controllers/user/support.js";
 
 import uploadSupport from "../../middleware/uploadSupport.js"; // 👈 chat multer
 

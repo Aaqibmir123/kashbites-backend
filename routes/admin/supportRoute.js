@@ -4,7 +4,7 @@ import {
   getAdminMessages,
   markConversationRead,
   sendAdminMessage,
-} from "../../controllers/admin/supportController.js";
+} from "../../controllers/admin/support.js";
 
 import upload from "../../middleware/uploadSupport.js";
 

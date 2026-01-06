@@ -9,7 +9,7 @@ import authRoutes from "./routes/auth/index.js";
 import userRoutes from "./routes/user/index.js";
 
 /* ===== RESTAURANT ROUTES (ONE ENTRY) ===== */
-import restaurantRoutes from "./routes/resturant/index.js";
+import restaurantRoutes from "./routes/restaurant/index.js";
 
 /* ===== ADMIN ROUTES (ONE ENTRY) ===== */
 import adminRoutes from "./routes/admin/index.js";

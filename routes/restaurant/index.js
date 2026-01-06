@@ -4,10 +4,10 @@ import { allowRoles } from "../../middleware/roleMiddleware.js";
 
 import notificationRoutes from "./notificationRoutes.js";
 import orderRoutes from "./orderRoutes.js";
-import resturantRoutes from "./resturantRoutes.js";
 import resturantAddressRoute from "./restaurantAddressRoutes.js";
 import restaurantDashboardRoutes from "./restaurantDashboardRoutes.js";
 import resturantProfileRoute from "./resturantProfileRoute.js";
+import resturantRoutes from "./resturantRoutes.js";
 
 const router = express.Router();
 

@@ -2,7 +2,7 @@ import mongoose from "mongoose";
 
 const variantSchema = new mongoose.Schema(
   {
-    label: { type: String, required: true }, // Small / Full / 1kg
+    label: { type: String, required: true },
     price: { type: Number, required: true },
   },
   { _id: false }
@@ -27,32 +27,26 @@ const productSchema = new mongoose.Schema(
       trim: true,
     },
 
-    description: {
-      type: String,
-    },
+    description: String,
 
     category: {
       type: String,
       required: true,
     },
 
-    /* 🔥 PRICING LOGIC */
     pricingType: {
       type: String,
       enum: ["single", "size", "quantity"],
       default: "single",
     },
 
-    price: {
-      type: Number, // only for single price
-    },
+    price: Number,
 
     variants: {
-      type: [variantSchema], // pizza / biryani
+      type: [variantSchema],
       default: [],
     },
 
-    /* 🔥 FOOD TYPE */
     foodType: {
       type: String,
       enum: ["veg", "nonveg"],
@@ -69,16 +63,13 @@ const productSchema = new mongoose.Schema(
       default: 0,
     },
 
-    image: {  
-      type: String,
-    },
-    restaurantId: {
-      type: mongoose.Schema.Types.ObjectId,
-      ref: "Restaurant", // 👈 restaurant model ka naam
-      required: true,
-    },
+    image: String,
   },
   { timestamps: true }
 );
 
-export default mongoose.model("ProductResturant", productSchema);
+const ProductResturant =
+  mongoose.models.ProductResturant ||
+  mongoose.model("ProductResturant", productSchema);
+
+export default ProductResturant;

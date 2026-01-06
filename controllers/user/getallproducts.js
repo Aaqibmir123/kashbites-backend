@@ -1,4 +1,4 @@
-import addProducts from "../../models/restaurants/addProducts";
+import addProducts from "../../models/restaurants/addProducts.js";
 
 export const getAllProducts = async (req, res) => {
     console.log("Fetching all products...");

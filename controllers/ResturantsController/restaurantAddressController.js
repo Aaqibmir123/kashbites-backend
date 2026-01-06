@@ -1,4 +1,4 @@
-import AddRestaurantAddress from "../../models/resturants/restaurantAddress.js";
+import AddRestaurantAddress from "../../models/restaurants/restaurantAddress.js";
 
 
 export const createOrUpdateRestaurantAddress = async (req, res) => {
